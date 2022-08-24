@@ -1,3 +1,6 @@
+build --build_metadata=TEST_GROUPS=//foo/bar,//foo/baz
+build --build_metadata=REPO_URL=https://github.com/buildbuddy-io/buildbuddy.git
+
 - 👋 Hi, I’m @StevenZhy
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
