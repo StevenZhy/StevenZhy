@@ -1,3 +1,7 @@
 build --build_metadata=REPO_URL=https://github.com/buildbuddy-io/buildbuddy.git
 
 build --build_metadata=VISIBILITY=PUBLIC
+
+build --workspace_status_command=$(pwd)/workspace_status.sh
+
+--build_metadata=BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
