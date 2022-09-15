@@ -1,7 +1,3 @@
-bazel build //...
-INFO: Streaming build results to: https://app.buildbuddy.io/invocation/7bedd84e-525e-4b93-a5f5-53517d57752b
-...
-
 --build_metadata=COMMIT_SHA=$(git rev-parse HEAD)
 
 build --build_metadata=REPO_URL=https://github.com/buildbuddy-io/buildbuddy.git
@@ -19,7 +15,3 @@ build --noremote_upload_local_results # Uploads logs & artifacts without writing
 build --remote_timeout=3600
 build --remote_executor=grpcs://remote.buildbuddy.io
 build --remote_header=x-buildbuddy-api-key=IeS87RjDdmlQ4vZOsRmy
-
-bazel build //...
-INFO: Streaming build results to: https://app.buildbuddy.io/invocation/7bedd84e-525e-4b93-a5f5-53517d57752b
-...
